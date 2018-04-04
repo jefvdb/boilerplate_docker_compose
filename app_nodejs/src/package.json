@@ -1,0 +1,13 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.1",
+  "description": "boilerplate",
+  "author": "You <your@email>",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

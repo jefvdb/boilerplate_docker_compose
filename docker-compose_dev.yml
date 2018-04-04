@@ -30,12 +30,17 @@ services:
         links:
             - db:db
             - queue:queue
+        volumes:
+            - ./app_nodejs/src:/src
         env_file:
             - ./env
     app_flask:
         build: ./app_flask
+        command: python ./wsgi.py
         links:
             - db:db
             - queue:queue
+        volumes:
+            - ./app_flask/src:/src
         env_file:
             - ./env
