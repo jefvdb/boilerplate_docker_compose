@@ -8,6 +8,8 @@ For development, please consider using `docker-compose_dev.yml`, it overlays you
 
 Runs a standard nginx with `/web/default.conf` as its config, serving from `/web/www`.
 
+It bumps normal traffic to HTTPS and forwars app traffic to the app servers.
+
 #### letsencrypt
 
 The supplied `cert.pem` and `key.pem` are self-signed for localhost. The `default.conf` config shares the `certbot_challenge` directory which allows for manual-mode certbot actions, such as
@@ -44,3 +46,7 @@ Runs a standard MySQL as UTF-8 as possible, with:
 ### queue
 
 A standard Redis.
+
+### in closing
+
+We had fucking Plan9 and now we're dealing with _this_.
