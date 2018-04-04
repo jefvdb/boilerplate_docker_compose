@@ -8,7 +8,7 @@ For development, please consider using `docker-compose_dev.yml`, it overlays you
 
 Runs a standard nginx with `/web/default.conf` as its config, serving from `/web/www`.
 
-It bumps normal traffic to HTTPS and forwars app traffic to the app servers.
+It bumps normal traffic to HTTPS and forwards app traffic to the app servers.
 
 #### letsencrypt
 
