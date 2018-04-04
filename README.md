@@ -43,6 +43,10 @@ Runs a standard MySQL as UTF-8 as possible, with:
 
 `/scripts/db_restore.sh` takes a backup's filename (which you need to place in `/db/backups/` first) and reloads the database from that.
 
+#### misc
+
+`/scripts/db_shell.sh` loads up a MySQL shell within the running db instance.
+
 ### queue
 
 A standard Redis.
