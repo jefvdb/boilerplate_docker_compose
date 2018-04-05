@@ -1,8 +1,6 @@
 Boilerplate docker-compose scaffold for personal projects. Grep for "boilerplate" to match your setup.
 
-Typically gets expanded with application servers, workers, queues and what have you.
-
-For development, please consider using `docker-compose_dev.yml`, it overlays your app sources as volumes and starts app_flask with the friendly debugger.
+For development, consider using `docker-compose_dev.yml`, it overlays your app sources as volumes and starts app_flask with the friendly debugger. Probably needs a `docker-compose -f docker-compose_dev.yml run app_nodejs npm install` to get your npm packages first tho.
 
 ### web
 
@@ -22,7 +20,7 @@ This will pause and ask you to place a nonce in a nonce-named file reachable as 
 
 #### app_flask
 
-A placeholder flask(_restful) app.
+A placeholder flask(_restful) app. Any calls will kick off the worker, see below.
 
 #### app_nodejs
 
@@ -50,6 +48,10 @@ Runs a standard MySQL as UTF-8 as possible, with:
 ### queue
 
 A standard Redis.
+
+### worker
+
+A placeholder worker to handle longer-living stuff (like sending mails) asyncly. Dies randomly so that the retry mechanism kicks in.
 
 ### in closing
 

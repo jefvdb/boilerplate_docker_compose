@@ -39,3 +39,9 @@ services:
             - queue:queue
         env_file:
             - ./env
+    worker:
+        build: ./worker
+        links:
+            - queue:queue
+        env_file:
+            - ./env
